@@ -57,6 +57,7 @@ nav ul{
     align-items: center;
     list-style: none;
     gap: 25px;
+    font-family: "Arimo", sans-serif;;
     
 }
 nav ul li a{
@@ -66,7 +67,7 @@ nav ul li a{
     color:  #575757;
 }
 
-/* Banner/Hero section */
+/* Banner-Hero section */
 
 .hero {
     position: relative;
@@ -104,11 +105,13 @@ nav ul li a{
     padding: 80px 0;
 }
 
-.speakers-section h2, .pricing-section h2 {
+.speakers-section h2, .pricing-section h2, .faq-section h2  {
     text-align: center;
     font-size: 56px;
     margin-bottom: 56px;
+    color: #0D1B2A;
 }
+
 .speaker-card-parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -225,6 +228,60 @@ nav ul li a{
     color: #2563EB;
     
 }
+
+
+/* --- FAQ Section --- */
+.faq-section {
+    padding: 80px 5%;
+}
+
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 24px 0;
+}
+
+.faq-item summary {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0D1B2A;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Custom plus/minus icons for the accordion */
+.faq-item summary::after {
+    content: '+';
+    font-size: 24px;
+    color: #1d4ed8;
+    font-weight: 400;
+}
+
+.faq-item[open] summary::after {
+    content: '−'; /* Minus sign when open */
+}
+
+/* Removes default webkit arrows for Safari */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item p {
+    margin-top: 16px;
+    color: #575757;
+    line-height: 1.6;
+    padding-right: 40px; /* Prevents text from sitting right under the +/- icon */
+}
+
+
 
 /* footer css */
 
