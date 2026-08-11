@@ -39,16 +39,17 @@ img{
 }
 
 /* Navbar CSS */
-nav{
-    /* max-width: 1500px; */
-    display:flex;
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff; /* Moves background to the sticky container */
+}
+nav {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    position: sticky;
-    top:0;
-    z-index: 100;
-    background-color: #ffffff;
 }
 
 nav ul{
