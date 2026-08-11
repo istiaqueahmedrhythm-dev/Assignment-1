@@ -1,5 +1,3 @@
-/* button color 1d4ed8 */
-/* Common text color 575757 */
 *{
     padding:0;
     margin:0;
@@ -12,7 +10,7 @@ img{
 /* Common code */
 .common-btn{
     background-color: #1d4ed8;
-    padding: 0.6rem 1.2rem;
+    padding: 10px 20px;
     border-radius: 6px;
     font-weight: bold;
     font-size: 16px;
@@ -21,24 +19,36 @@ img{
     cursor: pointer;
 }
 .btn-large{
-    padding: 0.8rem 2rem;
+    padding: 13px 32px;
     font-size: 22px;
 }
+.btn-outline {
+    background-color: transparent;
+    color: #1d4ed8;
+    border: 1px solid #1d4ed8;
+}
+.btn-outline-team {
+    background-color: transparent;
+    color: #0D1B2A;
+    border: 1px solid #0D1B2A;
+}
+
 .container{
-    max-width: 1200px;
+    max-width: 1500px;
     margin:auto;
 }
 
 /* Navbar CSS */
 nav{
-    
+    /* max-width: 1500px; */
     display:flex;
     justify-content: space-between;
-    max-width: 1200px;
-    padding: 1rem 5%;
-    position:sticky;
     align-items: center;
+    padding: 15px 5%;
+    position: sticky;
+    top:0;
     z-index: 100;
+    background-color: #ffffff;
 }
 
 nav ul{
@@ -46,12 +56,12 @@ nav ul{
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    gap: 1.5rem;
+    gap: 25px;
     
 }
 nav ul li a{
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 15px;
     font-weight: 500;
     color:  #575757;
 }
@@ -82,10 +92,169 @@ nav ul li a{
     font-weight: 700;
 }
 .hero-content p{
-    font-size: 16px;
+    font-size: 15px;
     max-width: 700px; 
     text-align: center;
     margin-bottom:225px;
+    opacity: 0.9;
+    
+}
+/* Speaker css */
+.speakers-section {
+    padding: 80px 0;
+}
+
+.speakers-section h2, .pricing-section h2 {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 56px;
+}
+.speaker-card-parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin: 0 100px;
+}
+.speaker-card{
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    
+}
+.speaker-card img{
+    width: 100%;
+    object-fit: cover;
+}
+.speaker-info {
+    padding: 24px;
+}
+.sector{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    display: block;
+    margin-bottom: 8px;
+    color:#2563EB;
+}
+.speaker-info h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0D1B2A;
+}
+.job{
+    font-size: 14px;
+    color: #575757;
+}
+
+/* pricing css */
+.pricing-section {
+    padding: 80px 5%;
+    
+    text-align: center;
+}
+.pricing-section h2 {
+    margin-bottom: 08px;
+}
+.subtitle {
+    color: #575757;
+    margin-bottom: 50px;
+}
+.pricing-card-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+.pricing-card {
+    background: #FFFFFF;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+.pro-card{
+    background: #0D1B2A ;
+}
+.team{
+    background: #F8F9FB;
+}
+.plan-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: #575757;
+    letter-spacing: 1px;
+}
+.pro-card .plan-name{
+    color: #93c5fd;
+}
+
+.price {
+    font-size: 44px;
+    font-weight:700;
+    /* margin: 16px 0; */
+}
+.pro-card .price{
+    color: #FFFFFF;
+}
+.per-person {
+    display: block;
+    font-size: 13px;
+    color:#575757;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E5E7EB;
+    margin-bottom: 20px ;
+}
+.features {
+    margin-bottom: 20px;
+    list-style-position: inside;
+}
+.features li {
+    font-size: 14px;
+    padding: 10px 0;
+    color: #333333;
+}
+.pro-card .features li{
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+.features li::marker {
+
+    color: #2563EB;
     
 }
 
+/* footer css */
+
+footer {
+    background-color: #0D1B2A; 
+    padding: 32px 5%; 
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.copyright {
+    color: #FFFFFF; 
+    opacity: 0.4;
+    margin: 0;
+}
+
+.privacy-tos {
+    display: flex;
+    gap: 25px; 
+}
+
+.privacy-tos a {
+    color: #FFFFFF; 
+    opacity: 0.4;
+    text-decoration: none;
+    font-size: 16px;
+}
